@@ -1,0 +1,10 @@
+Develop a ToDo manager app which should have the following functionalities:
+
+    Ability to create/add/edit Todos for different modules that a developer is working on.
+    Marking a todo as done (by striking out for eg.).
+    Clearing all done Todos from a module.
+    Moving less prioritized items to a Backlog list and thus removing them from a todo list of a module.
+
+I leave the UX and UI design to you. Go with the one you think would suit best for this kind of app. Feel free to use Javascript or any JS library that you think would help you here (with justifications for its use prepared ofcourse ;) )
+
+You could use any layout to arrange the ToDos. Card layout is one I would recommend where in you can drag different ToDo lists in your workspace area.
