@@ -3,117 +3,233 @@
     <head>
         <meta charset='utf-8' />
         <title>TODO Manager</title>
-        <!--<link rel="stylesheet" type="text/css" href="css/custom.css" />-->
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
         <script type="text/javascript" src="js/lib/JSgoodies.min.js"></script>
     </head>
     <body>
+        <header>
+            <a href="#" id="createWorkspace"><span>+</span> Create Workspace</a>
+            <input type="text" value="Workspace: Workspace 1" title="Workspace: Workspace 1" /><span class="dropDownArrow"></span>
+            <ul id="viewList">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">List View</a></li>
+            </ul>
+        </header>
         <section id="todoListContainer">
-            <form action="." method="post">
+            <header class="paginationContainer">
+                <a href="#"><< Previous</a>
+                <input type="text" value="1" class="currentPageNumber" /><span class="dropDownArrow"></span> / <span class="totalCoutOfPage">5</span>
+                <a href="#">Next >></a>
+            </header>
+            <!--<form action="." method="post">
                 <fieldset>
                     <legend>Add a Todo Item</legend>
                     <input type="text" placeholder="Add Item" />
                 </fieldset>
-            </form>
-            <!--<div class="workSpace">
-                <h2>Workspace Title 1</h2>
-                <ul>
-                    <li>
-                        <h3>Module Name 1</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
+            </form>-->
+            <section class="body">
+                <div class="slides">
+                    <div class="workSpace">
+                        <h2>Workspace Title 1</h2>
+                        <ul class="moduleList">
+                            <li>
+                                <h3>Module Name 1</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 2</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 3</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <h3>Module Name 2</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
+                    </div>
+                    <div class="workSpace">
+                        <h2>Workspace Title 2</h2>
+                        <ul class="moduleList">
+                            <li>
+                                <h3>Module Name 1</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 2</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 3</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <h3>Module Name 3</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
+                    </div>
+                    <div class="workSpace">
+                        <h2>Workspace Title 3</h2>
+                        <ul class="moduleList">
+                            <li>
+                                <h3>Module Name 1</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 2</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 3</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="workSpace">
-                <h2>Workspace Title 2</h2>
-                <ul>
-                    <li>
-                        <h3>Module Name 1</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="workSpace">
+                        <h2>Workspace Title 4</h2>
+                        <ul class="moduleList">
+                            <li>
+                                <h3>Module Name 1</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 2</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 3</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <h3>Module Name 2</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
+                    </div>
+                    <div class="workSpace">
+                        <h2>Workspace Title 5</h2>
+                        <ul class="moduleList">
+                            <li>
+                                <h3>Module Name 1</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 2</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 3</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <h3>Module Name 3</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
+                    </div>
+                    <div class="workSpace">
+                        <h2>Workspace Title 6</h2>
+                        <ul class="moduleList">
+                            <li>
+                                <h3>Module Name 1</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 2</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Module Name 3</h3>
+                                <ul class="taskList">
+                                    <li>Task Name 1</li>
+                                    <li>Task Name 2</li>
+                                    <li>Task Name 3</li>
+                                    <li>Task Name 4</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="workSpace">
-                <h2>Workspace Title 3</h2>
-                <ul>
-                    <li>
-                        <h3>Module Name 1</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Module Name 2</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Module Name 3</h3>
-                        <ul>
-                            <li>Task Name 1</li>
-                            <li>Task Name 2</li>
-                            <li>Task Name 3</li>
-                            <li>Task Name 4</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>-->
-            <ul>
+                    </div>
+                </div>
+            </section>
+            <!--<ul>
                 <li>Task Name</li>
-            </ul>
+            </ul>-->
         </section>
+        <footer>&copy; 2013</footer>
 
         <script type="text/javascript" src="js/src/Base.js"></script>
         <script type="text/javascript" src="js/src/TodoStore.js"></script>

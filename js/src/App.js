@@ -12,7 +12,7 @@
         console.log("show all task.");
         controller.listAll();
 
-        var form = document.querySelector('form');
+        /*var form = document.querySelector('form');
 
         form.addEventListener('submit', function (e) {
             console.groupCollapsed("App");
@@ -22,8 +22,13 @@
             controller.addItem({title: input.value});
             console.groupEnd("App");
             e.preventDefault();
-        }, false);
+        }, false);*/
         console.groupEnd("App");
-    }, false)
+    }, false);
+    var tID = 0;
+    window.addEventListener('resize', function (e) {
+        clearTimeout(tID);
+        tID = setTimeout(function () {console.log('resizing...')}, 0);
+    }, false);
     
 })(this, this.document, JSgoodies, App);

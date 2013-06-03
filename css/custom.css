@@ -1,13 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-}
-
-body {
-    font-size: 62.5%;
-}
-
-#todoListContainer {
-    font-size: 1.2em;
-}
+* {margin: 0; outline: none; padding: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+input[type="text"] {border: 1px solid #cccccc; height: 20px; margin: 0; padding: 0 22px 0 5px;}
+body {font-size: 62.5%;}
+body > * {font-size: 1.6em; margin: 0 auto; width: 90%;}
+body > header {text-align: right;}
+#createWorkspace {display: inline-block;}
+#createWorkspace span {color: green; content: "+ "; float: left; font-size: 1.4em; font-weight: bold; margin: -4px 2px 0 0; transition: all 0.5s ease 0s;}
+#createWorkspace:hover span {color: green; content: "+ "; font-weight: bold; text-shadow: 0 0 1px green, 0 0 2px green; tra}
+body > header input {text-align: center; width: 170px;}
+body > header ul {float: right;}
+body > header ul li {float: left;margin: 0 3px;}
+body > header ul li:last-child {margin-right: 0;}
+#todoListContainer {overflow: hidden;}
+#todoListContainer .paginationContainer {font-size: 1em; margin-top: 10px; text-align: right;}
+#todoListContainer .paginationContainer input {text-align: center; width: 25px;}
+.slides {float: left;}
+.dropDownArrow {border-color: #999999 transparent transparent; border-style: solid; border-width: 8px 9px 0; display: inline-block; margin-left: -22px;}
